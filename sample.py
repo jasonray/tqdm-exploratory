@@ -2,7 +2,7 @@ from tqdm import tqdm
 from time import sleep
 
 text = ""
-for i in tqdm(range(100)):
-    for char in ["a", "b", "c", "d"]:
-        sleep(0.25)
-        text = text + char
+l = tqdm(iterable=range(100), colour='blue')
+for i in l:
+    sleep(0.25)
+    # l.write('loop ', i)
